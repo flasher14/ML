@@ -11,7 +11,7 @@ with open('/content/enjoysport (1).csv','r') as csvfile:
 print("Positive eg are: ")
 for line in data:
     print(line)
-print("Steps of the candidate elimination algo are: ")
+print("Steps of the Find-S algo are: ")
 print(hypo)
 hypo = data[0]
 for i in range(len(data)):
