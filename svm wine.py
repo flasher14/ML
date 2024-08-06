@@ -26,8 +26,8 @@ accuracy = accuracy_score(test_target, predictions)
 print(f'Test accuracy: {accuracy}')
 
 
-sample_index = 0  # Change this to classify a different sample
-new_sample = test_data[sample_index].reshape(1, -1)  # Reshape to match the input format of the model
+sample_index = 0 
+new_sample = test_data[sample_index].reshape(1, -1)  
 predicted_label = model.predict(new_sample)
 actual_label = test_target[sample_index]
 
