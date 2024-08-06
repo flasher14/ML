@@ -1,9 +1,7 @@
 import csv
 
-# Initial hypothesis with six '%'
 hypothesis = ['%', '%', '%', '%', '%', '%']
 
-# Read CSV file
 with open("enjoysport.csv") as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     data = [row for row in csv_reader if row[-1].strip().upper() == "YES"]
@@ -16,7 +14,6 @@ print("\nThe positive examples are:")
 for example in data:
     print(example)
 
-# Initialize hypothesis with the first positive example
 if data:
     hypothesis = data[0][:-1]
 
